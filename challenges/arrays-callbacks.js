@@ -65,7 +65,11 @@ console.log(populationTotal);
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
 
-function consume(parameter1, parameter2, cb){
+// function consume(parameter1, parameter2, cb){
+//   return cb(parameter1, parameter2);
+// }
+
+const consume = (parameter1, parameter2, cb) => {
   return cb(parameter1, parameter2);
 }
 
@@ -75,15 +79,26 @@ function consume(parameter1, parameter2, cb){
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
-function add (x, y) {
+// function add (x, y) {
+//   return x + y;
+// };
+const add = (x, y) => {
   return x + y;
-};
+}
 
-function multiply (x, y) {
+// function multiply (x, y) {
+//   return x * y;
+// };
+
+const multiply = (x, y) => {
   return x * y;
-};
+}
 
-function greeting (first_name, last_name) {
+// function greeting (first_name, last_name) {
+//   return `Hello ${first_name} ${last_name}, nice to meet you!`
+// };
+
+const greeting = (first_name, last_name) => {
   return `Hello ${first_name} ${last_name}, nice to meet you!`
 };
 
